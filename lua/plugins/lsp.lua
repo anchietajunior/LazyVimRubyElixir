@@ -12,6 +12,7 @@ return {
         "solargraph",
         "css-lsp",
         "gopls",
+        "elixir-ls",
       })
     end,
   },
