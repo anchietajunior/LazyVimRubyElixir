@@ -13,6 +13,7 @@ return {
         "css-lsp",
         "gopls",
         "elixir-ls",
+        "clangd",
       })
     end,
   },
@@ -24,6 +25,7 @@ return {
       inlay_hints = { enabled = true },
       ---@type lspconfig.options
       servers = {
+        clangd = {},
         solargraph = {},
         rust_analyzer = {
           cmd = { vim.fn.expand("~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer") },
