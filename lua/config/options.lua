@@ -5,6 +5,8 @@ vim.o.autoindent = false
 vim.o.smartindent = false
 vim.o.cindent = false
 
+vim.o.guifont = "JetBrainsMono Nerd Font:h20"
+
 local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
   return
@@ -144,3 +146,7 @@ cmp.setup({
 })
 
 vim.g.copilot_assume_mapped = true
+
+local opt = vim.opt
+
+opt.relativenumber = false

@@ -22,7 +22,7 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 -- Telescope
 keymap.set("n", "<leader>f", telescope.find_files, {})
 keymap.set("n", "<leader>a", telescope.live_grep, {})
-keymap.set("n", "<leader>gg", telescope.git_status, {})
+keymap.set("n", "<leader>6", telescope.git_status, {})
 
 -- New tab
 keymap.set("n", "te", ":tabedit<Return>", opts)
